@@ -157,10 +157,10 @@ body = MIMEText(body) # convert the body to a MIME compatible string
 msg.attach(body) # attach it to the main message
 
 
-server = smtplib.SMTP('mail.almadar.ly', 25)
+server = smtplib.SMTP('mail.ly', 25)
 server.starttls()
 server.login("Username", "Password") #The username and password of the smtp server (in case it's needed)
-server.sendmail('Sender Email address','To emeil address',msg.as_string())
+server.sendmail('Sender_Email_address','To_emeil_address',msg.as_string())
 server.quit()
 exit()  
 
